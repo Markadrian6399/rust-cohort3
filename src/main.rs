@@ -1,5 +1,6 @@
 // mod mk_calculator;
 mod food_reg;
+mod mk_calculator;
 use std::time::SystemTime;
 
 use food_reg::{FoodType, categories1};
@@ -121,6 +122,7 @@ fn main() {
     //     }
 
     println!("food is ready");
+    mk_calculator::run();
     let foodcart1 = FoodType {
         name: String::from("rice"),
         price: 1000,
